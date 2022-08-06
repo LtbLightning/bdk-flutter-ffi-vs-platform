@@ -64,9 +64,9 @@ class _MyHomePageState extends State<MyHomePage> {
           await nativeWallet(i);
           var x = "${i}::::${stopwatch.elapsed}";
           print(x);
-          // setState(() {
-          //   response = x;
-          // });
+          setState(() {
+            response = x;
+          });
         }
         responseText = '${stopwatch.elapsed}';
         print(responseText);
