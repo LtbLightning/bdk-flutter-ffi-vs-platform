@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
             response = x;
           });
         }
-        responseText = 'Executed in ${stopwatch.elapsed}';
+        responseText = '${stopwatch.elapsed}';
         print(responseText);
       } else
         responseText = "Input should be valid number and should be greater than 1";

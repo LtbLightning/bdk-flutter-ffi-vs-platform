@@ -62,13 +62,13 @@ class _MyHomePageState extends State<MyHomePage> {
         Stopwatch stopwatch = Stopwatch()..start();
         for (var i = 1; i <= times; i++) {
           await nativeWallet(i);
-          setState(() {
-            var x = "${i}::::${stopwatch.elapsed}";
-            print(x);
-            response = x;
-          });
+          var x = "${i}::::${stopwatch.elapsed}";
+          print(x);
+          // setState(() {
+          //   response = x;
+          // });
         }
-        responseText = 'Executed in ${stopwatch.elapsed}';
+        responseText = '${stopwatch.elapsed}';
         print(responseText);
       } else
         responseText = "Input should be valid number and should be greater than 1";
